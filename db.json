@@ -1,0 +1,85 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Carlos Pérez",
+      "edad": 31,
+      "email": "carlosssp@email.com",
+      "foto": "https://randomuser.me/api/portraits/men/1.jpg",
+      "aceptacion": 100,
+      "genero": false,
+      "id": "1"
+    },
+    {
+      "nombre": "Ana García M",
+      "edad": 35,
+      "email": "ana@email.com",
+      "foto": "https://randomuser.me/api/portraits/women/2.jpg",
+      "aceptacion": 50,
+      "genero": true,
+      "id": "2"
+    },
+    {
+      "nombre": "Edily Rosa",
+      "edad": 37,
+      "email": "ddedily34@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
+      "aceptacion": 99,
+      "genero": true,
+      "id": "9d8d"
+    },
+    {
+      "id": "d89a",
+      "nombre": "Juan Marin",
+      "edad": 30,
+      "email": "jj@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPis7Y5eZQsqDBvDKLt4VlgedwLN_-RENXg&s",
+      "aceptacion": 65,
+      "genero": false
+    },
+    {
+      "nombre": "Carlos Pérezs",
+      "edad": 300,
+      "email": "carlosss@email.com",
+      "foto": "https://randomuser.me/api/portraits/men/1.jpg",
+      "aceptacion": 10,
+      "genero": false,
+      "id": "aa1"
+    },
+    {
+      "nombre": "Ana García Mora",
+      "edad": 34,
+      "email": "ana@email.com",
+      "foto": "https://randomuser.me/api/portraits/women/2.jpg",
+      "aceptacion": 5,
+      "genero": true,
+      "id": "cc2"
+    },
+    {
+      "nombre": "Edily Rosa",
+      "edad": 37,
+      "email": "ddedily34@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
+      "aceptacion": 99,
+      "genero": true,
+      "id": "9d8d1"
+    },
+    {
+      "id": "d89a23",
+      "nombre": "Juan Marin",
+      "edad": 30,
+      "email": "jj@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPis7Y5eZQsqDBvDKLt4VlgedwLN_-RENXg&s",
+      "aceptacion": 65,
+      "genero": false
+    },
+    {
+      "nombre": "test sab ",
+      "edad": 20,
+      "email": "edilychile@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
+      "aceptacion": 22,
+      "genero": false,
+      "id": "d76e"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🚀Mini API con Fetch y JSON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--! npm install -g json-server -->
+    <!--! json-server --watch db.json --port 3000 -->
+    <!-- json-server actúa como una API REST y se ejecuta en un puerto específico (por defecto, 3000):
+    Tu aplicación frontend (HTML + JS) puede estar en un servidor local como Live Server, que usa otro puerto (5500, 8080, etc.). -->
+
+</head>
+<body class="bg-[linear-gradient(90deg,rgba(43,57,217,0.7)_0%,rgba(255,255,255,1)_13%,rgba(255,255,255,1)_51%,rgba(255,255,255,1)_66%,rgba(255,255,255,1)_90%,rgba(43,57,217,0.7)_100%)]">
+    <h1 class="text-5xl text-center text-blue-700 font-extrabold my-8"> Formulario - Tabla CRUD de usuarios con Json-Server </h1>
+    
+    <main class="flex gap-8 flex-col xl:flex-row justify-center items-center xl:justify-center xl: items-center"
+
+        <!--! FORMULARIO -->
+        <!--? https://tailwindflex.com/@lukas-muller/contact-us-page-template -->
+        
+        <!--TODO: quitar ese bg-gray-800 -->
+        <div class="xl:sticky xl:top-0 xl:max-w-[35%] max-w-[95%] min-h-screen flex flex-col justify-center">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                </div>
+                <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+        
+                    <div class="text-center pb-6">
+                        <!--TODO: poner titlulo  -->
+                        <h1 class="text-3xl">FORMULARIO DE USUARIO!</h1>
+        
+                        <!--TODO: poner titlulo bandera  -->
+                        <p class="text-gray-300 m-2" id="title">
+                        LLENA LOS CAMPOS Y CREA UN USUARIO.
+                        </p>
+                    </div>
+        
+                    <!--TODO: darle id al form y a cada input. Agregar: edad, aceptacion, foto. Crear div del radio de genero, quitar textArea -->
+                    <form id="userForm">
+                        <input type="hidden" id="userId"> <!--! Campo oculto para editar usuarios -->
+                        <input
+                                class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" placeholder="Nombre" name="nombre">
+        
+                        <!--TODO: Creamos input edad,  type="number" -->
+                        <input
+                                class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="number" placeholder="Edad" name="edad">
+                        <input
+                                class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="number" id="aceptacion" placeholder="Indica porcentaje de aceptación de 1 a 100" name="aceptacion">
+                        
+                        <div class="p-4">
+                            <label class="block text-lg font-medium mb-2" for="genero">¿Cuál es tu género?</label>
+                                <div class="flex items-center mb-4">
+                                    <input type="radio" id="mujer" name="genero" value="true" class="mr-2">
+                                    <label for="mujer" class="text-md">Mujer</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="hombre" name="genero" value="false" class="mr-2">
+                                    <label for="hombre" class="text-md">Hombre</label>
+                                </div>
+                        </div>
+                                
+                    
+                        <input
+                                class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="email" placeholder="Email" name="email">
+        
+                        <!--TODO: Cambiamos input FOTO -->
+                        <input
+                                class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" placeholder=" URL de tu foto" name="foto">
+        
+                    
+                        <div class="flex justify-between">
+                            <input
+                                class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="submit" value="Send ➤">
+                            <input
+                                id="reset"
+                                class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="reset">
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--? https://tailwindflex.com/@sophia-baker/table-with-progress-column -->
+        <!--TODO titlulo: quitar max-w-xl y poner: p-4  -->
+        <div class="block w-full overflow-x-auto px-6 xl:px-4 max-w-[98%] xl:max-w-[55%] text-xs">
+            <table class="items-center w-full bg-transparent border-collapse">
+            <!--TODO: Poner Labels de la tabla cabecera. -->
+                <thead>
+                    <tr>
+                            <!--TODO: Poner Labels -->
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                                Foto</th>
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                                Nombre</th>
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                                Edad</th>
+                        
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
+                                Genero</th>
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
+                                Email</th>
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                                Aceptación %</th>
+                            <th
+                                class="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
+                                Acciones</th>
+                        </tr>
+                </thead>
+            
+                <!--TODO: vaciar el cuerpo de la tabla y id="userTable". -->
+                <tbody class="divide-y divide-gray-100" id="userTable"></tbody>
+            </table>
+        </div>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

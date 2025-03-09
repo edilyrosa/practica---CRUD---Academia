@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini API con Fetch y JSON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Gestión de Usuarios</h2>
+    
+    <!--TODO: npm install -g json-server -->
+
+    <form id="userForm">
+        <input type="hidden" id="userId"> <!-- Campo oculto para editar usuarios -->
+        <label>Nombre: <input type="text" id="nombre" required></label>
+        <label>Edad: <input type="number" id="edad" required></label>
+        <label>Email: <input type="email" id="email" required></label>
+        <label>Foto URL: <input type="text" id="foto" required></label>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h3>Lista de Usuarios</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
