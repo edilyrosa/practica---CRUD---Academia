@@ -1,31 +1,13 @@
 {
   "usuarios": [
     {
-      "nombre": "Carlos Pérez",
-      "edad": 31,
-      "email": "carlosssp@email.com",
-      "foto": "https://randomuser.me/api/portraits/men/1.jpg",
-      "aceptacion": 100,
-      "genero": false,
-      "id": "1"
-    },
-    {
       "nombre": "Ana García M",
       "edad": 35,
       "email": "ana@email.com",
       "foto": "https://randomuser.me/api/portraits/women/2.jpg",
-      "aceptacion": 50,
-      "genero": true,
+      "aceptacion": 100,
+      "genero": false,
       "id": "2"
-    },
-    {
-      "nombre": "Edily Rosa",
-      "edad": 37,
-      "email": "ddedily34@gmail.com",
-      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
-      "aceptacion": 99,
-      "genero": true,
-      "id": "9d8d"
     },
     {
       "id": "d89a",
@@ -37,15 +19,6 @@
       "genero": false
     },
     {
-      "nombre": "Carlos Pérezs",
-      "edad": 300,
-      "email": "carlosss@email.com",
-      "foto": "https://randomuser.me/api/portraits/men/1.jpg",
-      "aceptacion": 10,
-      "genero": false,
-      "id": "aa1"
-    },
-    {
       "nombre": "Ana García Mora",
       "edad": 34,
       "email": "ana@email.com",
@@ -55,31 +28,67 @@
       "id": "cc2"
     },
     {
-      "nombre": "Edily Rosa",
-      "edad": 37,
+      "nombre": "Juan Marin c",
+      "edad": 35,
+      "email": "jjm@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPis7Y5eZQsqDBvDKLt4VlgedwLN_-RENXg&s",
+      "aceptacion": 70,
+      "genero": false,
+      "id": "d89a23"
+    },
+    {
+      "nombre": "Carlota",
+      "edad": 44,
+      "email": "edilymor@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s",
+      "aceptacion": 45,
+      "genero": true,
+      "id": "74d3"
+    },
+    {
+      "nombre": "test 555",
+      "edad": 56,
+      "email": "edilymor@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s",
+      "aceptacion": 90,
+      "genero": true,
+      "id": "b01d"
+    },
+    {
+      "nombre": "test 51",
+      "edad": 50,
+      "email": "edilyVE@gmail.com",
+      "foto": "https://randomuser.me/api/portraits/women/2.jpg",
+      "aceptacion": 50,
+      "genero": true,
+      "id": "f8e1"
+    },
+    {
+      "nombre": "Miguel",
+      "edad": 20,
+      "email": "ddedily34@gmail.com",
+      "foto": "https://randomuser.me/api/portraits/men/1.jpg",
+      "aceptacion": 100,
+      "genero": false,
+      "id": "DmHse5n"
+    },
+    {
+      "nombre": "carlita 23",
+      "edad": 22,
+      "email": "edilyrosa@gmail.com",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s",
+      "aceptacion": 100,
+      "genero": true,
+      "id": "6b1c"
+    },
+    {
+      "id": "3da8",
+      "nombre": "test 22",
+      "edad": 33,
       "email": "ddedily34@gmail.com",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
-      "aceptacion": 99,
-      "genero": true,
-      "id": "9d8d1"
-    },
-    {
-      "id": "d89a23",
-      "nombre": "Juan Marin",
-      "edad": 30,
-      "email": "jj@gmail.com",
-      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPis7Y5eZQsqDBvDKLt4VlgedwLN_-RENXg&s",
-      "aceptacion": 65,
-      "genero": false
-    },
-    {
-      "nombre": "test sab ",
-      "edad": 20,
-      "email": "edilychile@gmail.com",
-      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwpd6MYpPdPoAJmyKIzXhXq2LCwrfit6QUA&s",
-      "aceptacion": 22,
-      "genero": false,
-      "id": "d76e"
+      "aceptacion": 33,
+      "genero": true
     }
   ]
 }
